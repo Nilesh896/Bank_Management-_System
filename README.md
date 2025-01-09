@@ -3,6 +3,8 @@
 This project is a simple web-based banking application that allows users to register, log in, view their account balance, and perform transactions like deposits and withdrawals. 
 It is built using PHP, MySQL, HTML, CSS, and JavaScript.
 
+[Download the demo video](https://github.com/Nilesh896/Bank_Management-_System/blob/68f3b98b45293c63b5f0bd744c1e9b8d4b28243d/output.mp4)
+
 ---
 
 ## Features
