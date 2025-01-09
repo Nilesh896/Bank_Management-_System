@@ -1,0 +1,136 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to right, #e3f2fd, #ffffff); /* Light and soothing background */
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.6;
+}
+
+/* Center the container */
+.container, .dashboard-container {
+    width: 100%;
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.container:hover, .dashboard-container:hover {
+    transform: scale(1.02);
+}
+
+/* Headings */
+h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 20px;
+    color: #444;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+/* Input Fields */
+input[type="text"], input[type="email"], input[type="password"], input[type="number"] {
+    width: 100%;
+    padding: 14px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus, input[type="number"]:focus {
+    border: 1px solid #64b5f6;
+    outline: none;
+    box-shadow: 0 0 10px rgba(100, 181, 246, 0.5);
+}
+
+/* Buttons */
+button {
+    background: linear-gradient(to right, #64b5f6, #42a5f5); /* Softer blue gradient */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+button:hover {
+    background: linear-gradient(to right, #42a5f5, #64b5f6);
+    transform: scale(1.05);
+}
+
+.logout-button {
+    background-color: #ef5350;
+    margin-top: 20px;
+}
+
+.logout-button:hover {
+    background-color: #e53935;
+}
+
+/* Transaction Table */
+.transaction-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.transaction-table th, .transaction-table td {
+    padding: 12px;
+    text-align: left;
+}
+
+.transaction-table th {
+    background-color: #64b5f6; /* Softer blue for the header */
+    color: white;
+    text-transform: uppercase;
+}
+
+.transaction-table td {
+    border: 1px solid #ddd;
+    font-size: 14px;
+}
+
+.transaction-table tr:hover {
+    background-color: #f5f5f5; /* Light gray hover effect */
+}
+
+/* Dynamic Forms */
+.transaction-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.actions {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Added spacing between buttons */
+}
